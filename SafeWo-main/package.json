@@ -1,0 +1,17 @@
+{
+  "name": "safewo-root",
+  "version": "1.0.0",
+  "description": "SafeWo - Your Safety. One Click Away. Modern Women Safety & Emergency Response Platform",
+  "scripts": {
+    "dev": "concurrently -n \"SERVER,CLIENT\" -c \"cyan,magenta\" \"npm run dev:server\" \"npm run dev:client\"",
+    "dev:server": "cd server && npm run dev",
+    "dev:client": "cd client && npm run dev",
+    "install:all": "npm install && cd server && npm install && cd ../client && npm install",
+    "seed": "cd server && npm run seed",
+    "build:client": "cd client && npm run build",
+    "start:server": "cd server && npm start"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
